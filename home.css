@@ -9,6 +9,7 @@ body{
     overflow-x: hidden;
 }
 /* nav section start*/
+
 /* Andy Bells CSS Reset *
 *,
 *::before,
@@ -87,6 +88,8 @@ select {
 }
 
  nav section ends*/
+
+ /* Hero Section Start*/
 .hero{
     padding-top: 80px;
     padding-bottom: 200px;
@@ -587,6 +590,8 @@ select {
     padding-top: 100px;
     margin-top: 250px !important;
     margin-bottom: 60px;
+    margin-left: -60px !important;
+    margin-right: -60px !important;
     width: 1390px !important;
     height: 614px !important;
     background-size: cover !important;
@@ -604,6 +609,7 @@ select {
     font-weight: 700 !important;
     color: white;
     line-height: 65px !important;
+    padding-top: 60px ;
 }
 
 
@@ -615,13 +621,13 @@ select {
     top: -190px !important;
 }
 
-.download-images{
+/*.download-images{
     margin-top: 160px;
 }
 
 .download-img{
     margin: 15px !important;
-}
+}*/
 
 @media(max-width:768px){
     .embark{
@@ -633,6 +639,8 @@ select {
         padding-top: 100px;
         margin-top: 250px !important;
         margin-bottom: 60px;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
         width: 100% !important;
         height: 100vh !important;
         background-size: cover !important;
@@ -657,6 +665,7 @@ select {
         font-weight: 700 !important;
         color: white;
         line-height: 35px !important;
+        padding-top: 20px !important;
     }
 
     .download-images{
@@ -816,7 +825,7 @@ select {
 }
 /* faq seection end */
 
-/* price start */
+/* price start 
 .price {
     background-color: #f4fbf6;
     padding-top: 170px;
@@ -999,12 +1008,12 @@ select {
   }
   
   
-/* price section end*/
+ price section end*/
 
 /* people start */
 .people{
-    padding-top: 100px ;
-    padding-bottom: 80px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
 }
 
 .people-head{
@@ -1032,7 +1041,7 @@ select {
 .testimonial-section {
     background-color: #fff;
     padding: 80px 0;
-    min-height: 100vh;
+    min-height: 1vh;
 }
 
 .testi-img .img-box {
