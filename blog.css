@@ -285,6 +285,16 @@ line-height: 25px;
 color: #6C757D !important;  
 }
 
+.blog-describe a{
+         color: #6C757D;
+         stroke: none;
+}
+
+.blog-describe a:hover{
+    color: #4EB867;
+    text-decoration: none !important;
+}
+
 .blog-word{
 font-family: Lora;
 font-size: 11px;
