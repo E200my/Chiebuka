@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog read</title>
+    <link rel="icon" href="https://dzrsteit2h2vm.cloudfront.net/figorate/images/Rectangle_61.png" />
+    <link rel="stylesheet" href="blog read.css">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- space grosek google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+  
+    <!-- plus jakarta sans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet" />
+  
+    <!-- poppins google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+  
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- Familjen Grotesk font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
+
+      <!-- inter font  -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+      <!-- monteserrat font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
+      rel="stylesheet">
+
+      <!-- poppins font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+      rel="stylesheet">
+       <!-- open sans font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+       <!-- lora font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+       <!-- roboto font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+       rel="stylesheet">
+
+</head>
+<body>
+  <!-- nav section statr-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light mt-2">
+      <div class="container p-3 rounded-4 px-4" style="background: #eef2f94d">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/Rectangle 61 (3).png" alt="Logo" /> Figorate
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav m-auto my-2 my-lg-0"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!--<li class="nav-item">
+                  <a class="nav-link" href="Markeplace.html">Marketplace</a>
+                </li>-->
+
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <!--<img
+              src="images/Shopping Cart.png"
+              class="me-1"
+              width="31"
+              height="31"
+              alt=""
+            />-->
+
+            <!--<a href="index.html" class="btn btn-transparent me-3">Sign in</a>-->
+            <a
+                  href="Form.html"
+                  class="btn btn-success d-flex align-items-center border-0"
+                >
+                  Contact Us 
+                </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+   <!--nav secion end-->
+    <!-- hero section start -->
+  <section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="hero-head">
+                    Role of each macronutrients in the body for better health
+                </h2>
+
+                <!--<p class="hero-word">
+                    Indulge in the flavors and nutrients of nature's bounty <br> 
+                    with our collection of vibrant and healthy vegetable salad <br> 
+                    recipes.
+                </p>-->
+            </div>
+        </div>
+    </div>
+  </section>
+    <!-- hero section end -->
+
+    <!-- essay start -->
+    <section class="essay" style="background-color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-content table-secondary">
+                        <table class=" table-borderless">
+                            <tr>
+                              <td class="col-md-3" style="background-color: #fff;"> 
+                                <p class="essay-word-i" style="background-color: #fff;">
+                                    20.06.2024   <img src="images/Line.png" class="img-fluid essay-line" alt=""> 4 minutes read
+                                </p> 
+                              </td>
+                              <td class="col-md-9 sec-tab" style="background-color: #fff;">
+                                  <p class="essay-word-ii">
+                                   <span class="orange-intro">Carbohydrate</span><br>
+                                   In our previous posts, we were able to discuss the macronutrients in food. The three macronutrients in food also called “macrotrio” are basically the nutrient the body needs the most and in large quantity too because their functions are enormous from energy production to tissue supports and repair and so on.
+                                   In this article we shall be reviewing the macronutrients and their role in the body for a better health. Of course when we say better health we mean a situation where the body can function properly. Like the saying goes make food thy medicine and medicine thy food- if you eat right definitely you will be free from the hospital.                                                       
+                                   <br>
+      
+                                    <span class="nutrition"><br></span> 
+                                   <ul class="essay-word-iii">
+                                      <li>
+                                        Primary Source of Energy: Carbohydrates are the body's main source of energy, providing fuel for various physiological processes and activities. When consumed, carbohydrates are broken down into glucose, which is used by cells as a source of immediate energy. Energy is required for movement, exercise, and physical activity. Regular exercise promotes cardiovascular health, strengthens muscles and bones, improves flexibility and balance, and supports weight management. Adequate energy intake ensures that the body has the fuel it needs to engage in physical activity and maintain an active lifestyle. Glucose is especially critical for fueling the brain, central nervous system, and muscles during physical activity.
+                                      </li>
+                                      <li>
+                                         Metabolism and Nutrient Utilization: consuming sufficient carbohydrates produces Energy used for metabolic processes that break down nutrients from food into usable forms, such as glucose, fatty acids, and amino acids. These nutrients are then used to produce energy through processes like glycolysis, beta-oxidation, and the citric acid cycle. Efficient metabolism ensures that the body can extract energy from food and utilize it for various physiological functions, including growth, repair, and maintenance.
+                                      </li>
+                                      <li>
+                                        Organ Function and Tissue Repair: Energy is vital for the proper functioning of organs and tissues throughout the body. Organ systems such as the heart, lungs, brain, liver, and kidneys require energy to perform their specialized functions, including pumping blood, breathing, processing nutrients, filtering waste, and maintaining homeostasis. Energy also supports tissue repair and regeneration, helping the body recover from injury, illness, and stress.
+                                      </li>
+                                      <li>
+                                        Cognitive Function and Mental Health: The brain is one of the body's most energy-demanding organs, requiring a significant amount of energy to support cognitive function, concentration, memory, and mood regulation. Adequate energy supply ensures optimal brain function, mental clarity, and emotional well-being. Proper nutrition and hydration are essential for sustaining mental energy and preventing cognitive decline.
+                                     </li>
+                                    <li>
+                                        Immune Function and Disease Prevention: Energy from carbohydrate is needed to support the immune system's defense mechanisms against pathogens, infections, and diseases. Nutrient-rich foods provide the energy and nutrients necessary to produce immune cells, antibodies, and cytokines that protect the body from harmful invaders. A well-nourished body with sufficient energy reserves is better equipped to fight off infections and recover from illness.
+                                   </li>
+                                  <li>
+                                    Growth and Development: Energy is particularly important during periods of growth and development, such as infancy, childhood, adolescence, and pregnancy. Adequate energy intake supports physical growth, bone development, hormonal balance, and reproductive health. Children and adolescents need sufficient energy to support their rapid growth and development, while pregnant women require extra energy to support fetal growth and development.
+                                 </li>
+                                <li>
+                                Fiber and Digestive Health: Certain carbohydrates, such as dietary fiber, are indigestible plant compounds that promote digestive health important for digestive health, bowel regularity, and prevention of constipation. Fiber also helps maintain healthy cholesterol levels and promotes satiety, aiding in weight management. Fiber adds bulk to stool, aids in the absorption of water, and helps prevent constipation and digestive disorders. High-fiber diets have been linked to reduced risk of heart disease, diabetes, and certain types of cancer.
+                               </li>
+                              </ul>
+
+                                <br> <br>
+                              <span class="nutrition">However, While carbohydrates are essential for overall health and well-being, imbalances in carbohydrate intake as a result of over consumption or metabolism can contribute to various health conditions. Here are some diseases and health conditions related to the role of carbohydrates in the body:<br></span> 
+                             <ul class="essay-word-iii">
+                                <li>
+                                    1.	Type 2 Diabetes: Type 2 diabetes is a chronic metabolic disorder characterized by elevated blood sugar levels due to insulin resistance and impaired insulin secretion. Insulin resistance occurs when cells become less responsive to insulin, leading to reduced glucose uptake and increased blood sugar levels. Excessive consumption of refined carbohydrates, sugary foods, and beverages can contribute to insulin resistance and increase the risk of developing type 2 diabetes.
+                                </li>
+                                <li>
+                                    2.	Metabolic Syndrome: Metabolic syndrome is a cluster of metabolic abnormalities that increase the risk of cardiovascular disease, type 2 diabetes, and stroke. It is characterized by a combination of insulin resistance, central obesity, high blood pressure, elevated blood sugar levels, and abnormal lipid levels. Diets high in refined carbohydrates, sugar, and processed foods are associated with an increased risk of metabolic syndrome.
+                                </li>
+                                <li>
+                                    3.	Obesity: Obesity is a complex condition characterized by excessive body fat accumulation, often resulting from an imbalance between energy intake and expenditure. Diets high in refined carbohydrates, added sugars, and high-calorie processed foods can contribute to weight gain and obesity. Consuming excess carbohydrates, especially in the form of sugary beverages and snacks, can lead to calorie overload and promote fat storage.
+                                </li>
+                                <li>
+                                    4.	Non-Alcoholic Fatty Liver Disease (NAFLD): Non-alcoholic fatty liver disease is a condition characterized by the accumulation of fat in the liver, not caused by excessive alcohol consumption. Insulin resistance and excess carbohydrate intake, particularly fructose, can contribute to the development of NAFLD by promoting fat deposition in the liver. NAFLD can progress to more severe liver conditions such as non-alcoholic steatohepatitis (NASH) and liver cirrhosis if left untreated.
+                               </li>
+                              <li>
+                                5.	Cardiovascular Disease: Diets high in refined carbohydrates, especially sugars and processed grains, have been linked to an increased risk of cardiovascular disease. High carbohydrate intake can contribute to elevated blood sugar levels, insulin resistance, inflammation, dyslipidemia, and obesity, all of which are risk factors for heart disease, stroke, and other cardiovascular conditions.
+                             </li>
+                            <li>
+                                Dental Caries: Consumption of sugary foods and beverages can increase the risk of dental caries (tooth decay) by providing a substrate for bacteria to produce acids that erode tooth enamel. Diets high in refined carbohydrates and added sugars, especially when consumed frequently or between meals, can contribute to dental cavities and oral health problems.
+                           </li>
+                          <li>
+                        </ul>
+                                   <p class="essay-word-iii">
+                                    Consuming adequate amount of carbohydrates is an essential part of a healthy diet, it is important to focus on consuming complex carbohydrates from whole, unprocessed sources such as fruits, vegetables, whole grains, legumes, and nuts. Limiting intake of refined carbohydrates, added sugars, and processed foods can help prevent the development of diet-related diseases and promote overall health and well-being.
+                                   </p>
+                                   <div class=" d-flex button-cont">
+                                    <a href="#" class="esssay-btn-one bbt">ADVENTURE</a>
+                                    <a href="#" class="esssay-btn-two bbt">PHOTO</a>
+                                  </div>
+                                  
+                                  <p class="essay-word-ii">
+                                    <span class="orange-intro">Proteins</span><br>
+                                    Proteins play a critical role in maintaining overall health and well-being, as they are involved in numerous physiological processes throughout the body. Some of the role of proteins to body are listed below: 
+                                    <br>
+       
+                                     <span class="nutrition"><br></span> 
+                                    <ul class="essay-word-iii">
+                                       <li>
+                                        1.	Tissue Growth and Repair: Proteins are the building blocks of tissues, including muscles, bones, skin, hair, nails, organs, and blood. Adequate protein intake is essential for tissue growth, repair, and maintenance, especially during periods of growth (e.g., childhood, adolescence) and recovery from injury or illness.
+                                       </li>
+                                       <li>
+                                        2.	Muscle Health and Strength: Protein is essential for maintaining muscle mass, strength, and function. It provides the amino acids necessary for muscle protein synthesis, which is the process by which new muscle tissue is built and existing muscle tissue is repaired. Regular consumption of protein-rich foods supports muscle growth, recovery, and adaptation to exercise.
+                                       </li>
+                                       <li>
+                                        3.	Enzyme Function: Proteins serve as enzymes, which are biological catalysts that facilitate biochemical reactions in the body. Enzymes play a key role in metabolism, digestion, cellular respiration, hormone synthesis, detoxification, and other vital processes. Each enzyme is specialized to catalyze a specific chemical reaction, making proteins indispensable for cellular function and overall metabolism.
+                                       </li>
+                                       <li>
+                                        4.	Hormone Regulation: Certain proteins act as hormones, which are chemical messengers that regulate various physiological processes and maintain homeostasis. Hormones control processes such as metabolism, growth, reproduction, stress response, blood sugar regulation, and appetite regulation. Examples of protein hormones include insulin, glucagon, thyroid hormones, growth hormone, and cortisol.
+                                      </li>
+                                     <li>
+                                       5. Transport and Storage: Proteins facilitate the transport and storage of essential nutrients, molecules, and ions throughout the body. Examples include hemoglobin, a protein in red blood cells that transports oxygen from the lungs to tissues, and ferritin, a protein that stores iron in the body for later use. Other proteins serve as carriers for vitamins, minerals, fatty acids, and hormones.
+                                    </li>
+                               </ul>
+
+
+                               <p class="essay-word-iii">
+                                While proteins are essential for overall health and well-being, consuming above normal or under consumption can contribute to various health conditions. 
+                                Malnutrition: Inadequate protein intake can lead to malnutrition, a condition characterized by deficiencies in essential nutrients, including proteins, vitamins, and minerals. Protein-energy malnutrition (PEM) is a common form of malnutrition that results from insufficient protein and calorie intake, leading to impaired growth, weakened immune function, muscle wasting, and other health complications.
+                                Protein-Energy Wasting (PEW): Protein-energy wasting is a common complication of chronic diseases such as chronic kidney disease, cancer, HIV/AIDS, and heart failure. PEW is characterized by a loss of lean body mass (muscle wasting), reduced appetite, weight loss, and malnutrition due to increased protein breakdown, decreased protein synthesis, and altered metabolism.
+                                it's important to note that while protein deficiency can lead to adverse health outcomes, excessive protein intake can also have negative consequences, such as kidney damage, dehydration, and imbalances in other nutrients. Maintaining a balanced diet that provides adequate protein, along with carbohydrates, fats, vitamins, and minerals, is essential for overall health and well-being.
+                               </p>
+ 
+                                 <br> <br>
+                               <span class="nutrition">FATS/OIL (LIPIDS)<br></span> 
+                              <ul class="essay-word-iii">
+                                 <li>
+                                    1.	Energy Storage and Fuel: Fat serves as a concentrated source of energy, providing more than twice the calories per gram compared to carbohydrates and proteins. Adipose tissue (body fat) stores excess energy in the form of triglycerides, which can be mobilized and oxidized to produce ATP (adenosine triphosphate), the body's primary energy currency, during periods of fasting or low energy intake.
+                                 </li>
+                                 <li>
+                                    2.	Insulation and Temperature Regulation: Fat acts as an insulating layer beneath the skin, helping to regulate body temperature and protect against heat loss. Adipose tissue provides thermal 
+                                    insulation by trapping heat and preventing excessive heat exchange with the external environment. In cold environments, stored fat can be metabolized to generate heat through a process called thermogenesis, helping to maintain core body temperature.                                    
+                                 </li>
+                                 <li>
+                                    3.	Organ Protection and Cushioning: Fat cushions and protects vital organs such as the heart, kidneys, liver, and intestines from impact and injury. Adipose tissue provides a protective layer of cushioning around organs, helping to absorb shock and prevent damage. Additionally, visceral fat (fat stored around abdominal organs) acts as a metabolic buffer, releasing fatty acids and hormones to regulate energy balance and metabolic homeostasis.
+                                 </li>
+                                 <li>
+                                    4.	Hormone Production and Regulation: Fat plays a crucial role in hormone synthesis, secretion, and signaling throughout the body. Adipose tissue produces and releases adipokines, hormones, and cytokines that regulate appetite, metabolism, inflammation, immune function, and insulin sensitivity.
+                                </li>
+                               <li>
+                                 5. Absorption of Fat-Soluble Vitamins: Dietary fats facilitate the absorption and transport of fat-soluble vitamins (A, D, E, and K) within the body. Lipids in the diet help solubilize fat-soluble vitamins in the gastrointestinal tract, allowing them to be absorbed into the bloodstream and transported to various tissues and organs. Adequate fat intake is necessary to ensure optimal absorption and utilization of fat-soluble vitamins for various physiological functions, including vision, bone health, immune function, and blood clotting.
+                                    Taking note of the kind of fats/oil we consume and the amount is very important. Excess fat intake should be limited as well as saturated fats which are bad fat should be avoided to prevent some of these diseases.                                
+                              </li>
+                         </ul>
+ 
+                         <span class="nutrition">Fun facts about macronutrients <br></span> 
+                         <ul class="essay-word-iii">
+                            <li>
+                                1. Carbohydrates:
+                                * Carbohydrates are not just found in grains and sweets; they are also abundant in fruits, vegetables, legumes, and dairy products.
+                            
+                                * Fiber, a type of carbohydrate found in plant foods, is important for digestive health, weight management, and reducing the risk of chronic diseases like heart disease and diabetes.
+                            
+                                * Not all carbohydrates have the same effect on blood sugar. Foods with a low glycemic index, such as whole grains and non-starchy vegetables, have a slower impact on blood sugar levels compared to high-glycemic foods like sugary snacks and refined grains.                            
+                            </li>
+                            <li>
+                                2. Proteins:
+                                * Proteins are made up of amino acids, which are often referred to as the building blocks of life. There are 20 different amino acids, nine of which are considered essential because the body cannot produce them and must obtain them from the diet.
+                            
+                                * Plant-based sources of protein, such as beans, lentils, tofu, and quinoa, can provide all the essential amino acids when consumed in combination throughout the day.
+                            
+                                * Protein can help with weight management by promoting feelings of fullness and reducing appetite. Including protein-rich foods in meals and snacks can help control hunger and support weight loss or maintenance goals.                            
+                            </li>
+                            <li>
+                                3. Fats:
+                                * Not all fats are unhealthy. Monounsaturated and polyunsaturated fats, found in foods like avocados, nuts, seeds, and fatty fish, can help improve heart health and reduce the risk of cardiovascular disease.
+                            
+                                * Omega-3 fatty acids, a type of polyunsaturated fat, are particularly beneficial for brain health, cognitive function, and reducing inflammation in the body. They are found in oily fish like salmon, walnuts, flaxseeds, and chia seeds.
+                            
+                                * Fat-soluble vitamins (A, D, E, and K) require dietary fat for absorption and utilization in the body. Including healthy fats in meals can help ensure adequate intake of these essential vitamins.                            
+                            </li>
+                    </ul>
+
+                                  <hr class="mt-5">
+                                    <div class="name-icon d-flex">
+                                      <!--<div class="name d-flex ">
+                                        <img src="images/Ellipse 4.png" alt="" class="img-fluid name-imgg nameee" width="50px" height="50px" >
+                                        <p class="nameee name-word">
+                                           <span class="david">By Oyewole David<br></span>
+                                            Nutritionist
+                                        </p>
+                                      </div>-->
+
+                                        <div class="icons d-flex">
+                                         <img src="images/Fb.png" alt="" class="img-fluid icon-img">
+                                         <img src="images/Tw.png" alt="" class="img-fluid icon-img">
+                                         <img src="images/Pn.png" alt="" class="img-fluid icon-img">
+                                         <img src="images/Be.png" alt="" class="img-fluid icon-img">
+                                        </div>
+                                    </div>
+                                  </p>
+                              </td>                           
+                            </tr>
+                          </table>
+
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- essay end -->
+
+     <!-- related post start -->
+     <section class="related">
+        <div class="container">
+          <h2 class="related-head">Related Posts</h2>
+
+          <div class="row picture-card-row">
+            <div class="col-md-4 mt-3">
+              <div class="img-containerr">
+                <img src="images/Blog Image (12).png" alt="" class="img-fluid">
+                   <div class="text-overlay">
+                <p class="related-date">28.06.2024</p>
+                <p class="related-gain">
+                    he Fruit-Only Frenzy: A Diet to Avoid.
+                </p>
+
+                <p class="related-routine">
+                    Discover why a 72-hour fruit binge might not be the health boost you think it is
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-3">
+              <div class="img-containerr">
+                <img src="images/Blog Image (13).png" alt="" class="img-fluid">
+                   <div class="text-overlay">
+                <p class="related-date">28.06.2024</p>
+                <p class="related-gain">
+                    Marinated Magic: Unlocking the Flavor of Vegetables"
+                </p>
+
+                <p class="related-routine">
+                    Discover the transformative power of marinades in bringing out the sweet, 
+                    savory, and tangy flavors of your favorite vegetables"
+                </p>
+              </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-3">
+              <div class="img-containerr">
+                <img src="images/Blog Image (14).png" alt="" class="img-fluid">
+                   <div class="text-overlay">
+                <p class="related-date">28.06.2024</p>
+                <p class="related-gain">
+                    The Fungal Fix: Unlocking the Power of Mushrooms
+                </p>
+
+                <p class="related-routine">
+                    Discover the immune-boosting, antioxidant-rich benefits of mushrooms and how 
+                    they can supercharge your health
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- related post end -->
+
+     <!-- footer start -->
+     <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2.5 mt-0 mb-3">
+            <div class="d-flex mt-3">
+              <a class="navbar-brand company-name-ii" href="index.html">
+                <img src="images/Rectangle 61 (3).png" width="40px"
+                  height="40px" alt="" class="img-fluid d-inline-block footer-imggg align-top">
+                Figorate 
+              </a>
+            </div>
+          </div>
+    
+         
+    
+          <div class="col-lg-2 offset-lg-1">
+            <ul class="foot-links">
+              <a href="#" class="foot-link"> <li class="list-head">Quick link</li></a>
+              <!--<a href="Markeplace.html" class="foot-link"> <li class="list-word">Marketplace</li> </a>-->
+              <a href="About.html" class="foot-link"> <li class="list-word">About Us</li> </a>
+              <a href="Blog.html" class="foot-link"> <li class="list-word">Blog</li> </a>
+            </ul>
+          </div>
+    
+          <div class="col-lg-2 offset-lg-1">
+            <ul class="foot-links">
+              <a href="#" class="foot-link"> <li class="list-head">Legal</li></a>
+              <a href="#" class="foot-link"> <li class="list-word">Private Policy</li> </a>
+              <a href="#" class="foot-link"> <li class="list-word">Terms of Service</li> </a>
+            </ul>
+          </div>
+        </div>
+    
+        <hr class="mb-3" style="color: #fff;" />
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-light">
+                <small>
+                  Copyright © 2016 - 2024 Figorate
+                </small>
+              </p>
+            </div>
+    
+            <div class="col-md-6 second-col ml-auto text-lg-end dd">
+              <div class="footer-icons">
+                <a href="https://www.facebook.com/share/bcAA2GAjpidf5iNy/?mibextid=LQQJ4d"> <i
+                    class="fa-brands fa-facebook text-white"></i></a>
+                <a href="https://x.com/figoratehq?s=21"> <i class="fa-brands fa-x-twitter text-white"></i></a>
+                <a href="https://www.instagram.com/figoratehq?igsh=ZjNyc20xeDhjNXR5"> <i
+                    class="fa-brands fa-instagram text-white"></i></a>
+                <a href="https://www.linkedin.com/company/figoratehq/"> <i
+                    class="fa-brands fa-linkedin text-white"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-2" style="color: #fff;" />
+      </div>
+      <hr class="" style="color: #fff;" />
+    </footer>
+ <!-- footer end -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous">
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P7PW7ER08M"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-P7PW7ER08M');
+    </script>
+</body>
+</html>
